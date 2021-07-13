@@ -3,7 +3,7 @@ import tkinter as tk
 
 def getNews():
     api_key="329bd053697746228e5ad0d494262032"
-    url = "https://newsapi.org/v2/top-headlines?country=us&apikey="+api_key
+    url = "https://newsapi.org/v2/top-headlines?country=in&apikey="+api_key
     news = requests.get(url).json()
     articles = news["articles"]
     my_articles = []
